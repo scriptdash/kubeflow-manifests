@@ -8,7 +8,10 @@ metadata:
   namespace: kubeflow
 spec:
   ports:
-  - port: 443
+    - port: 443
+    - port: 8081
+      targetPort: 8081
+      name: metrics
   selector:
     app: notebook-controller
     kustomize.component: notebook-controller
