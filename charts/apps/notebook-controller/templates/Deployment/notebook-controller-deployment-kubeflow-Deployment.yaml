@@ -48,7 +48,7 @@ spec:
                   name: notebook-controller-config-9675dd2fhk
           image: docker.io/kubeflownotebookswg/notebook-controller:v1.6.1
           ports:
-            - containerPort: 8081
+            - containerPort: 8080
               name: metrics
               protocol: TCP
           imagePullPolicy: Always
