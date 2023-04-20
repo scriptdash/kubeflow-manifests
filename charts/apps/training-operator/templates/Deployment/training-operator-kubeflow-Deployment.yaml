@@ -29,7 +29,7 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: metadata.name
-          image: kubeflow/training-operator:v1-e1434f6
+          image: kubeflow/training-operator:v1-5a5f92d
           livenessProbe:
             httpGet:
               path: /healthz
