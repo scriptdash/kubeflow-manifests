@@ -8,6 +8,7 @@ data:
             bucket: {{ .Values.s3.bucketName }},
             keyPrefix: artifacts,
             endpoint: {{ .Values.s3.minioServiceHost }},
+            region: {{ .Values.s3.minioServiceRegion }},
             insecure: false,
             useSDKCreds: true,
             keyFormat: "artifacts/{{`{{workflow.name}}`}}/{{`{{workflow.creationTimestamp.Y}}`}}/{{`{{workflow.creationTimestamp.m}}`}}/{{`{{workflow.creationTimestamp.d}}`}}/{{`{{pod.name}}`}}"
