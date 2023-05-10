@@ -7,4 +7,6 @@ s3:
   minioServiceRegion:
   roleArn:
 
+accessKey: "asdf"
+secretKey: "asdf"
 replicas: 1
