@@ -25,7 +25,7 @@ install-kustomize:
 	$(eval KUSTOMIZE_VERSION:=5.0.1)
 	curl --silent --location "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2Fv$(KUSTOMIZE_VERSION)/kustomize_v$(KUSTOMIZE_VERSION)_linux_amd64.tar.gz" | tar xz -C /tmp
 	chmod +x /tmp/kustomize
-	mv /tmp/kustomize /Users/jeffreykeene/go/bin/kustomize
+	sudo mv /tmp/kustomize /usr/local/bin/kustomize
 	kustomize version
 
 install-yq:
