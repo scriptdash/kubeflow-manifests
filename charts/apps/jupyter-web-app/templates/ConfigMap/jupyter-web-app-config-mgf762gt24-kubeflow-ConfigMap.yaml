@@ -42,7 +42,7 @@ data:
     \ false\n  environment:\n    value: {}\n    readOnly: false\n  workspaceVolume:\n\
     \    # Workspace Volume to be attached to user's Notebook\n    # If you don't\
     \ want a workspace volume then delete the 'value' key\n    value:\n      mount:\
-    \ /home/jovyan\n      newPvc:\n        metadata:\n          name: '{notebook-name}-workspace'\n\
+    \ /home/jovyan/data\n      newPvc:\n        metadata:\n          name: '{notebook-name}-workspace'\n\
     \        spec:\n          resources:\n            requests:\n              storage:\
     \ 10Gi\n          accessModes:\n          - ReadWriteOnce\n    readOnly: false\n\
     \  dataVolumes:\n    # List of additional Data Volumes to be attached to the user's\
